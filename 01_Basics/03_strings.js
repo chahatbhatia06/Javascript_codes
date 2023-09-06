@@ -1,5 +1,5 @@
 const firstName = "Chahat";
-const rollNumber = 06;
+const rollNumber = 6;
 
 console.log(`My name is ${firstName} and my roll no is ${rollNumber}`)
 

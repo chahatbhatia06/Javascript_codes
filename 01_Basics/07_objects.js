@@ -30,5 +30,41 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`); //this keyword is used to refer the same object
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+//console.log(JsUser.greeting());
+//console.log(JsUser.greetingTwo());
+
+// objects as literals and constructor
+
+// const tinderUser = new Object() // singleton object
+const tinderUser = {}
+
+tinderUser.id = "user_123"
+tinderUser.name = "chahat"
+tinderUser.loggedIn = true
+
+//console.log(tinderUser);
+
+
+//nested objects
+const regularUser = {
+    email: "chahat@google.com",
+    fullname: {
+        userfullname: {
+            firstname: "chahat",
+            lastname: "bhatia"
+        }
+    }
+}
+//console.log(regularUser.fullname.userfullname.firstname) //accessing nested objects
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
+
+//const obj3 =(obj1,obj2)
+
+//const obj3 =Object.assign({},obj1,obj2) //one way to merge objects using assign
+
+const obj3 ={...obj1,...obj2} // using spread operator
+console.log(obj3);
+

@@ -68,3 +68,27 @@ const obj4 = {5: "a", 6: "b"}
 const obj3 ={...obj1,...obj2} // using spread operator
 console.log(obj3);
 
+// database values recieved in array objects
+const users = [
+{
+    id : 1,
+    email :"abc@gmail.com"
+},
+
+{
+    id : 2,
+    email : "abc@gmail.com"
+},
+
+] 
+
+const access = users[1].email; // to access the objects 
+console.log(access);
+
+console.log(tinderUser);
+
+ console.log(Object.keys(tinderUser));
+ console.log(Object.values(tinderUser));
+ console.log(Object.entries(tinderUser));
+
+ console.log(tinderUser.hasOwnProperty('isLoggedIn'));

@@ -92,3 +92,14 @@ console.log(tinderUser);
  console.log(Object.entries(tinderUser));
 
  console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+ //Destructuring objects and arrays
+
+ const student = {
+    Firstname: "chahat",
+    rollNo: "06",
+    subject: "javascript"
+ }
+
+ const {Firstname: YourName} = student  //curly braces inside the statement is used for destructuring
+ console.log(YourName);
